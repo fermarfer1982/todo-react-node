@@ -11,7 +11,7 @@ const TaskList = () => {
 
   // ---------------------------------------------------------
   // Si quieres hacer un console.log, hazlo aquí, antes del return:
-console.log("→ Valor de API_URL en producción:", API_URL);
+
   // ---------------------------------------------------------
 
   // Cargar tareas al montar el componente

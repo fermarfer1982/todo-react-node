@@ -3,6 +3,10 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Container, Row, Col, Form, Button, ListGroup, Spinner, Badge } from "react-bootstrap";
 
+// TaskList.js (Fragmento relevante)
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api/tasks";
+
+
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState("");

@@ -1,21 +1,19 @@
 // backend/index.js
 const express = require("express");
 const cors = require("cors");
-require("dotenv").config();
+require("dotenv").config();        // Opcional: ayuda a que también index.js cargue .env
 const connectDB = require("./config/db");
 const taskRoutes = require("./routes/taskRoutes");
 
-connectDB();
+connectDB();                       // Conecta a MongoDB antes de levantar el servidor
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-// --- NUEVA RUTA EN LA RAÍZ PARA EVITAR 404 -------------------
 app.get("/", (req, res) => {
   res.send("Bienvenido a la API de To-Do List");
 });
-// ------------------------------------------------------------
 
 app.use("/api/tasks", taskRoutes);
 

@@ -4,6 +4,8 @@ import axios from "axios";
 import { Container, Row, Col, Form, Button, ListGroup, Spinner, Badge } from "react-bootstrap";
 
 // TaskList.js (Fragmento relevante)
+
+console.log("→ Valor de API_URL en producción:", API_URL);
 const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api/tasks";
 
 

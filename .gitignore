@@ -1,0 +1,23 @@
+# Node modules (backend y frontend)
+backend/node_modules/
+frontend/node_modules/
+
+# Archivos de entorno
+backend/.env
+frontend/.env
+
+# Carpetas de compilación y cachés
+backend/build/
+frontend/build/
+backend/.cache/
+frontend/.cache/
+
+# Logs y bases de datos temporales
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuración de sistema (Windows)
+Thumbs.db
+Desktop.ini
